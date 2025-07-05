@@ -1,4 +1,6 @@
 'use client';
+import Side_back_image from '@/components/Assets/Side_back_image.png'
+import Image from "next/image";
 
 const FeaturedSection = () => {
   return (
@@ -8,8 +10,8 @@ const FeaturedSection = () => {
           {/* Image */}
           <div className="w-full lg:w-1/2">
             <div className="relative rounded-2xl overflow-hidden">
-              <img
-                src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=600&h=400&fit=crop"
+              <Image
+                src={Side_back_image}
                 alt="Restaurant Interior"
                 className="w-full h-80 lg:h-96 object-cover"
               />
