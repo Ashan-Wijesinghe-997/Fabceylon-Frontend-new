@@ -27,9 +27,28 @@ const NavBar = () => {
               <Link href="#locations" className="text-white hover:text-orange-500 px-3 py-2 text-sm font-medium transition-colors">
                 Locations
               </Link>
-              <Link href="#menu" className="text-white hover:text-orange-500 px-3 py-2 text-sm font-medium transition-colors">
-                Menu
-              </Link>
+
+              {/* Dropdown Menu */}
+              <div className="relative group">
+                <div className="text-white hover:text-orange-500 px-3 py-2 text-sm font-medium cursor-pointer">
+                  Menu
+                </div>
+                <div className="absolute left-0 mt-0 w-56 bg-transparent border border-orange-500/30 backdrop-blur-md rounded-lg shadow-lg hidden group-hover:block z-50 transition-all">
+                  <Link href="/cafenuwara/menu/appetizers" className="block px-4 py-2 text-white hover:bg-orange-500/20 hover:text-orange-400 transition">
+                    Cafe Nuwara
+                  </Link>
+                  <Link href="/fabceylon-kandy/menu/appetizers" className="block px-4 py-2 text-white hover:bg-orange-500/20 hover:text-orange-400 transition">
+                    Fabceylon Kandy
+                  </Link>
+                  <Link href="/fabceylon-grand/menu/appetizers" className="block px-4 py-2 text-white hover:bg-orange-500/20 hover:text-orange-400 transition">
+                    Fabceylon Grand
+                  </Link>
+                  <Link href="/fabceylon-kurunegala/menu/appetizers" className="block px-4 py-2 text-white hover:bg-orange-500/20 hover:text-orange-400 transition">
+                    Fabceylon Kurunegala
+                  </Link>
+                </div>
+              </div>
+
               <Link href="#about" className="text-white hover:text-orange-500 px-3 py-2 text-sm font-medium transition-colors">
                 About
               </Link>
@@ -60,9 +79,28 @@ const NavBar = () => {
               <Link href="#locations" className="text-white hover:text-orange-500 block px-3 py-2 text-base font-medium">
                 Locations
               </Link>
-              <Link href="#menu" className="text-white hover:text-orange-500 block px-3 py-2 text-base font-medium">
-                Menu
-              </Link>
+
+              {/* Mobile Dropdown */}
+              <details className="group">
+                <summary className="text-white hover:text-orange-500 block px-3 py-2 text-base font-medium cursor-pointer">
+                  Menu
+                </summary>
+                <div className="pl-4">
+                  <Link href="/cafenuwar/menu" className="block px-3 py-2 text-white hover:text-orange-400 text-sm">
+                    Café Nuwara
+                  </Link>
+                  <Link href="/fabceylon-kandy/menu" className="block px-3 py-2 text-white hover:text-orange-400 text-sm">
+                    Fabceylon Kandy
+                  </Link>
+                  <Link href="/fabceylon-grand/menu" className="block px-3 py-2 text-white hover:text-orange-400 text-sm">
+                    Fabceylon Grand
+                  </Link>
+                  <Link href="/fabceylon-kurunegala/menu" className="block px-3 py-2 text-white hover:text-orange-400 text-sm">
+                    Kurunegala
+                  </Link>
+                </div>
+              </details>
+
               <Link href="#about" className="text-white hover:text-orange-500 block px-3 py-2 text-base font-medium">
                 About
               </Link>
