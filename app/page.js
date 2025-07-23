@@ -7,6 +7,7 @@ import LocationsGrid from '@/components/LocationsGrid';
 import FeaturedSection from '@/components/FeaturedSection';
 import RestaurantDetails from '@/components/RestaurantDetails';
 import TestimonialsSection from '@/components/TestimonialsSection';
+import Footer from '@/components/Footer';
 
 
 const Index = () => {
@@ -21,6 +22,7 @@ const Index = () => {
       <FeaturedSection />
       <RestaurantDetails />
       <TestimonialsSection />
+      <Footer />
 
       {/* Quick Access to Cafe Nuwara - Fixed Navigation */}
       
